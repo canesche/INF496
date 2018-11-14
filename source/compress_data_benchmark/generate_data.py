@@ -14,7 +14,7 @@ else:
 	    os.remove(data_output)
 
 	open_arq = open("results.csv", "a")
-	open_arq.write("dim = " + str(dim) + "\nlvl,uncompress,compress,rate,time (s)\n")	
+	open_arq.write("dim = " + str(dim) + "\nlvl,uncompress,compress,rate,time (s), time descompress (s)\n")	
 	open_arq.close()
 	
 	print("dimension       = "+ str(dim))

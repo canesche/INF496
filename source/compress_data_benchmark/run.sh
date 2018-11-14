@@ -2,7 +2,7 @@
 #!/bin/bash
 
 DIM=2
-INPUT='../kmeans/USCensus1990.data.txt'
+INPUT='../../../../Documentos/kmeans/USCensus1990.data.txt'
 OUTPUT='text.txt'
 OUTPUT_COMPRESS='text.txt.gz'
 
