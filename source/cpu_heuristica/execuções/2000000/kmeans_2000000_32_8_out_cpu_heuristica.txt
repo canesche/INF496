@@ -1,0 +1,72 @@
+Break in iteration 6
+
+
+
+Cluster values: 0 1 1 0 0 0 0 0 
+
+Cluster values: 1 1 1 0 0 0 0 0 
+
+Cluster values: 1 10 1 0 0 0 0 0 
+
+Cluster values: 4 1 1 0 0 1 3 1 
+
+Cluster values: 4 10 1 0 0 1 1 1 
+
+Cluster values: 4 1 1 0 0 5 2 1 
+
+Cluster values: 3 0 1 0 0 0 0 1 
+
+Cluster values: 6 1 1 0 0 0 0 1 
+
+Cluster values: 7 0 1 0 0 0 0 1 
+
+Cluster values: 9 0 0 0 0 0 0 0 
+
+Cluster values: 10 0 0 0 0 0 0 0 
+
+Cluster values: 11 0 0 0 0 0 0 0 
+
+Cluster values: 12 0 0 0 0 0 0 0 
+
+Cluster values: 13 0 0 0 0 0 0 0 
+
+Cluster values: 14 0 0 0 0 0 0 0 
+
+Cluster values: 15 0 0 0 0 0 0 0 
+
+Cluster values: 16 0 0 0 0 0 0 0 
+
+Cluster values: 17 0 0 0 0 0 0 0 
+
+Cluster values: 18 0 0 0 0 0 0 0 
+
+Cluster values: 19 0 0 0 0 0 0 0 
+
+Cluster values: 20 0 0 0 0 0 0 0 
+
+Cluster values: 21 0 0 0 0 0 0 0 
+
+Cluster values: 22 0 0 0 0 0 0 0 
+
+Cluster values: 23 0 0 0 0 0 0 0 
+
+Cluster values: 24 0 0 0 0 0 0 0 
+
+Cluster values: 25 0 0 0 0 0 0 0 
+
+Cluster values: 26 0 0 0 0 0 0 0 
+
+Cluster values: 27 0 0 0 0 0 0 0 
+
+Cluster values: 28 0 0 0 0 0 0 0 
+
+Cluster values: 29 0 0 0 0 0 0 0 
+
+Cluster values: 30 0 0 0 0 0 0 0 
+
+Cluster values: 31 0 0 0 0 0 0 0 
+
+Times: 2865.693446ms 2763.799771ms 2941.881841ms 2804.971405ms 2663.588738ms 2649.722110ms 2645.104320ms 2658.839931ms 2648.769883ms 2646.878312ms 
+1 Iteration Execution Time: 424.244359ms
+
+Time AVG (3º until 10º): 2673.982100ms 

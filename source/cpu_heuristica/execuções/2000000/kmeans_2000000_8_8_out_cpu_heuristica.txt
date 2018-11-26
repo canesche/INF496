@@ -1,0 +1,24 @@
+Break in iteration 6
+
+
+
+Cluster values: 0 1 1 0 0 0 0 0 
+
+Cluster values: 1 1 1 0 0 0 0 0 
+
+Cluster values: 1 10 1 0 0 0 0 0 
+
+Cluster values: 4 1 1 0 0 1 3 1 
+
+Cluster values: 4 10 1 0 0 1 1 1 
+
+Cluster values: 4 1 1 0 0 5 2 1 
+
+Cluster values: 3 0 1 0 0 0 0 1 
+
+Cluster values: 6 1 1 0 0 0 0 1 
+
+Times: 923.108504ms 960.501788ms 1010.229020ms 965.685485ms 939.091085ms 955.290276ms 901.807396ms 926.207063ms 947.080320ms 984.527377ms 
+1 Iteration Execution Time: 154.616258ms
+
+Time AVG (3º until 10º): 945.669857ms 
