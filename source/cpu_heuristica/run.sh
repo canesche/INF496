@@ -10,11 +10,11 @@ DEBUG=1
 while [ $BITS -lt $MAXBITS ]; do
     echo "Para "$BITS" bits"
     DIM=2
-    while [ $DIM -lt 3 ]; do
+    while [ $DIM -lt 33 ]; do
         K=2
-        while [ $K -lt 65 ]; do
+        while [ $K -lt 33 ]; do
             echo "kmeans_k"$K"_d"$DIM
-                ./a.out 2000000 $K 100 $DIM $BITS "execution/kmeans_k"$K"_d"$DIM"_BITS"$BITS".txt" $DATABASE $DEBUG >> results.csv    
+            ./a.out 2000000 $K 100 $DIM $BITS "original/kmeans_k"$K"_d"$DIM"_BITS"$BITS".txt" $DATABASE $DEBUG >> results.csv    
             let K=K*2
         done
         let DIM=DIM*2

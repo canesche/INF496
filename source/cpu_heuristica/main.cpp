@@ -33,10 +33,10 @@ int kmeans(int *input, int *centroids, int *centroids_old, int max_it, int k,
         for (int i = 0; i < num_points; ++i) {//pra cada ponto
             int min, min_id = 0;
             bool overral;
-            for (int c = 0; c < k; c++) {//pra cada centroide
+            for (int c = 0; c < k; ++c) {//pra cada centroide
                 int sum = 0;
                 overral = false;
-                for (int j = 0; j < dim; j++) {//pra cada dimensão
+                for (int j = 0; j < dim; ++j) {//pra cada dimensão
                     int tmp;
                     tmp = centroids[c * dim + j] - input[i * dim + j];
                     tmp *= tmp;
@@ -67,6 +67,12 @@ int kmeans(int *input, int *centroids, int *centroids_old, int max_it, int k,
 
             for (int j = 0; j < dim; ++j) {
                 k_sum[min_id * dim + j] += input[i * dim + j];
+                if(debug){
+                    (*output_text) += std::to_string(input[i * dim + j]) + " ";
+                    if (j == dim-1 ){
+                        (*output_text) += std::to_string(min_id) + "\n";
+                    }
+                }
             }
             k_qtde[min_id] += 1;
         }
@@ -75,7 +81,7 @@ int kmeans(int *input, int *centroids, int *centroids_old, int max_it, int k,
             diff = high_resolution_clock::now() - s;
             timeExec = diff.count();
 
-            (*output_text) += "\n1 Iteration Execution Time: " + std::to_string(timeExec * 1000) + "ms";
+            //(*output_text) += "\n1 Iteration Execution Time: " + std::to_string(timeExec * 1000) + "ms";
             return 0;
         }
 
@@ -198,6 +204,8 @@ int main(int argc, char **argv) {
         }
 
         if (times == 10) {
+            output_text += "\n\n";
+            output_text = "";
             kmeans(data, centroids, centroids_old, max_iterations, num_clusters,
             	   num_dim, num_points, true, max_value, &output_text);
             continue;
@@ -221,7 +229,7 @@ int main(int argc, char **argv) {
             output_text = output_text + "Break in iteration " + std::to_string(it) + "\n\n";
             for (int j = 0; j < num_clusters * num_dim; j++) {
                 if (j % num_dim == 0) {
-                    output_text += "\n\nCluster values: ";
+                    output_text += "Cluster values: ";
                 }
                 output_text += std::to_string(centroids[j]) + " ";
             }
@@ -234,7 +242,7 @@ int main(int argc, char **argv) {
         }
     }
 
-    output_text += "\n\nTime AVG (3º until 10º): " + std::to_string(time_sum / 7) + "ms ";
+    //output_text += "\n\nTime AVG (3º until 10º): " + std::to_string(time_sum / 7) + "ms ";
 
     printf("%f,%d\n", time_sum/7.0f, max_value);
 
